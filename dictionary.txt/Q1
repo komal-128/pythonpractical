@@ -1,0 +1,6 @@
+wap in python to arrange dictionary in ascending order on the basis of values.
+
+import operator
+d = {1: 5, 3: 9, 4: 2, 2: 10, 0: 50}
+sorted_dic = sorted(d.items(), key=operator.itemgetter(1))
+print('Dictionary in ascending order by value : ',sorted_dic)
